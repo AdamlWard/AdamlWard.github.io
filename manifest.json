@@ -1,0 +1,38 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "acronymicon.net",
+  "description": "Acronyms and the words that made them.",
+  "short_name": "acronymicon",
+  "icons": [{
+    "src": "icon/lowres.webp",
+    "sizes": "64x64",
+    "type": "image/webp"
+  },{
+    "src": "icon/lowres.png",
+    "sizes": "64x64"
+  }, {
+    "src": "icon/hd_hi",
+    "sizes": "128x128"
+  }],
+  "scope": "/acronymicon/",
+  "start_url": "/index.html?utm_source=homescreen",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "aliceblue",
+  "background_color": "white",
+  "serviceworker": {
+    "src": "serviceWorker.js",
+    "scope": "/acronymicon/",
+    "update_via_cache": "none"
+  },
+  "screenshots": [{
+    "src": "screenshots/Screenshot_01.jpg",
+    "sizes": "494x417",
+    "type": "image/jpeg"
+  },{
+    "src": "screenshots/Screenshot_02.jpg",
+    "sizes": "494x417",
+    "type": "image/jpeg"
+  }]
+}
