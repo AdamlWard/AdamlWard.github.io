@@ -1,5 +1,11 @@
 
 @font-face {
+	src: url('/assets/fonts/AmstelvarAlpha-VF.woff2');
+	font-family:'Amstelvar';
+	font-style: normal;
+}
+
+@font-face {
 	src: url('/assets/fonts/Decovar-VF_2017-06-12.woff2');
 	font-family:'Decovar';
 	font-style: normal;
