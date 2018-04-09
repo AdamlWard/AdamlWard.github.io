@@ -91,13 +91,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Amstelvar VF", Georgia, "New Times Roman", serif;
-	font-variation-settings:
-		'wght' 300,
-		'wdth' 350,
-		'XOPQ' 200,
-		'YOPQ' 26,
-		'opsz' 24,
-		'grad' 88;
+	font-variation-settings: 'wght' 295, 'wdth' 68.35, 'opsz' 13.46, 'XOPQ' 205.75, 'XTRA' 365.87, 'YOPQ' 44.74, 'YTLC' 535.87, 'YTSE' 17.87, 'GRAD' 70.51, 'XTCH' 800, 'YTCH' 800, 'YTAS' 662.67, 'YTDE' 259.55, 'YTUC' 710.26, 'YTRA' 968.06, 'PWGT' 73.74, 'PWDT' 400.34;
 	transition: all linear 0.2s;
 }
 
