@@ -13,19 +13,6 @@ html {
   font-size: 100%;
 }
 
-body {
-	font-family: "Amstelvar VF", "Open Sans", sans-serif;
-    font-size: 12px;
-	font-weight: 400;
-	color: #616161;
-	text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	font-variation-settings: 'wght' 753.33, 'wdth' 100, 'opsz' 21.14, 'XOPQ' 189.68, 'XTRA' 402, 'YOPQ' 50, 'YTLC' 500, 'YTSE' 18, 'GRAD' 88, 'XTCH' 1011.32, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 750, 'YTRA' 1056.25, 'PWGT' 74.99, 'PWDT' 402;
-
-}
-
 
 body,
 p,
@@ -36,6 +23,8 @@ li {
 	font-family: "Amstelvar VF", Georgia, "New Times Roman", serif;
 	font-weight: normal;
 	font-style: normal;
+	font-size: 12px;
+	color: #616161;
 	font-feature-settings:
 		/*1|on OR 0|off*/
 		/*"liga" 1,*/ /*standard ligatures*/
@@ -67,20 +56,20 @@ li {
 
 	font-variation-settings:
 			/*normal | [ <string> <number>] #*/
-		'wght' 753.33, /*weight*/
+		'wght' 200.00, /*weight*/
 		'wdth' 100,  /*width*/
-		'opsz' 21.14, /*Optical Size*/
-		'XOPQ' 189.68, /*x opaque*/
+		'opsz' 12, /*Optical Size*/
+		'XOPQ' 100, /*x opaque*/
 		'XTRA' 402, /*x transparent*/
 		'YOPQ' 50, /*y opaque*/
-		'YTLC' 500, /*y transparent*/
-		'YTSE' 18, /*Serif height*/
-		'GRAD' 88, /*Grade*/
+		'YTLC' 532, /*y transparent*/
+		'YTSE' 15.50, /*Serif height*/
+		'GRAD' 110, /*Grade*/
 		'XTCH' 1011.32, /*x transparent Chinese*/
 		'YTCH' 1000, /*y transparent Chinese*/
-		'YTAS' 750, /*y transparent ascender*/
-		'YTDE' 250, /*y transparent descender*/
-		'YTUC' 750, /*y transparent uppercase*/
+		'YTAS' 736, /*y transparent ascender*/
+		'YTDE' 350, /*y transparent descender*/
+		'YTUC' 736, /*y transparent uppercase*/
 		'YTRA' 1056.25, /*y transparent*/
 		'PWGT' 74.99, /*Para Weight*/
 		'PWDT' 402; /*Para Width*/
