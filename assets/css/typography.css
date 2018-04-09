@@ -76,15 +76,10 @@ li {
 
 }
 
-
-
 p {
-  margin-left: auto;
-  margin-right: auto;
 /* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
  -ms-word-break: break-all;
      word-break: break-all;
-
      /* Non standard for webkit */
      word-break: break-word;
 
@@ -94,42 +89,7 @@ p {
         hyphens: auto;
 }
 
-/* SCSS */
-/* Variations for font size and line height */
-p {
-  font-size: calc( var(--p-font-size-min) * 1rem );
-  font-variation-settings:
-    'wght' var(--p-vf-wght),
-    'wdth' 265,
-    'opsz' calc( var(--p-font-size-min) * 16 ),
-    'grad' 88;
-  line-height: var(--p-line-height-min);
-  max-width: 38em;
-	transition: all linear 0.2s;
-  @media screen and (min-width: 24.15em) {
-    font-variation-settings:
-      'wght' var(--p-vf-wght),
-      'wdth' 335,
-      'opsz' calc( var(--p-font-size-min) * 18 ),
-      'grad' 88;
-    line-height: calc(( var(--p-line-height-min) * 1em ) + ( var(--p-line-height-max) - var(--p-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-large) - var(--bp-small) )));
-  }
-  @media (min-width: 60.25em) {
-    font-size: calc(( var(--p-font-size-min) * 1em ) + ( var(--p-font-size-max) - var(--p-font-size-min) ) * ((100vw - ( var(--bp-large) * 1em )) / ( var(--bp-xlarge) - var(--bp-large) )));
-    font-variation-settings:
-      'wght' var(--p-vf-wght),
-      'wdth' 402,
-      'opsz' calc( var(--p-font-size-max) * 16 ),
-      'grad' 88;
-    line-height: var(--p-line-height-max);
-  }
-  @media (min-width: 75em) {
-    font-size: calc( var(--p-font-size-max) * 1em );
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Amstelvar VF", Georgia, "New Times Roman", serif;
   font-variation-settings:
     'wght' 300,
     'wdth' 350,
@@ -139,59 +99,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-family: "Amstelvar VF", Georgia, "New Times Roman", serif;
   font-feature-settings: "liga" 1, "kern" 1;
-  font-size: calc( var(--h1-font-size-min) * 1em );
+  font-size: 1rem;
   font-variation-settings:
-    'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-s) ),
+    'wght' 300,
     'wdth' 350,
     'YTLC' 500,
     'YTAS' 680,
     'YTDE' 190,
     'YTUC' 720,
-    'opsz' calc( var(--h1-font-size-min) * 16 ),
+    'opsz' 24,
     'grad' 88;
-  line-height: var(--h1-line-height-min);
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1rem;
   max-width: 38rem;
-  @media screen and (min-width: 24.15em) {
-    line-height: calc(( var(--h1-line-height-min) * 1em ) + ( var(--h1-line-height-max) - var(--h1-line-height-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
-    font-size: calc(( var(--h1-font-size-min) * 1em ) + ( var(--h1-font-size-max) - var(--h1-font-size-min) ) * ((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge) - var(--bp-small) )));
   }
-  @media screen and (min-width: 43.75em) {
-    font-variation-settings:
-      'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-m) ),
-      'wdth' 375,
-      'YTLC' 500,
-      'YTAS' 715,
-      'YTDE' 190,
-      'YTUC' 735,
-      'opsz' calc( ( (( var(--h1-font-size-max) - var(--h1-font-size-min) ) / 2 ) + var(--h1-font-size-min) ) * 16 ),
-      'grad' 88;
-    max-width: 42rem;
-  }
-  @media screen and (min-width: 60.25em) {
-    max-width: 47rem;
-  }
-  @media (min-width: 75em) {
-    font-size: calc( var(--h1-font-size-max) * 1em );
-    font-variation-settings:
-      'wght' calc( var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l) ),
-      'wdth' 402,
-      'YTLC' 500,
-      'YTAS' 750,
-      'YTDE' 250,
-      'YTUC' 750,
-      'opsz' calc( var(--h1-font-size-max) * 16 ),
-      'grad' 88;
-    line-height: var(--h1-line-height-max);
-    max-width: 57.5rem;
 
-  }
-}
-
-
+/* SCSS */
+/* Variations for font size and line height */
 
 
 
@@ -332,16 +256,4 @@ p.first-line:first-line {
       'grad' 88;
     line-height: var(--dc-line-height-max);
   }
-}
-
-
-
-
-
-
-
-@font-face {
-	src: url('/assets/fonts/Decovar-VF_2017-06-12.woff2');
-	font-family:'Decovar';
-	font-style: normal;
 }
