@@ -1,0 +1,409 @@
+﻿
+/* Morph Loading Animation */
+
+/*placeholder object*/
+.loading-placeholder {
+	position: relative;
+	height: 70px;
+    padding: 0;
+	background-color: #fff;
+    /*border: 1px dashed #d2d6de;*/
+	border: 0px solid;
+}
+
+.loading-wrapper {
+	position: relative;
+	width:100%;
+	height:100%;
+}
+
+.loading-outer-shape {
+	position: relative;
+	margin: 0 auto;
+	width: 32px;
+	height: 32px;
+	background-color: #7893DB;
+	outline: 1px solid transparent;
+	animation: loading-morph 2s 0s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+
+.loading-inner-shape {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -8px 0 0 -8px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    outline: 1px solid transparent;
+    animation: loading-morph-inner 2s 0s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+
+.loading-text {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #898989;
+	margin: 0 0 -4px 0;
+}
+
+.loading-text-hop {
+	display: inline-block;
+	margin:0 0 0 0;
+	-webkit-animation: text-hop 6s ease infinite;
+	animation: text-hop 6s ease infinite;
+}
+
+.loading-text-delay00 {
+	animation-delay: 0s !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay01 {
+	animation-delay: 100ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay02 {
+	animation-delay: 200ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay03 {
+	animation-delay: 300ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay04 {
+	animation-delay: 400ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay05 {
+	animation-delay: 500ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay06 {
+	animation-delay: 600ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay07 {
+	animation-delay: 700ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay08 {
+	animation-delay: 800ms !important;
+	animation-duration: 6s !important;
+}
+
+.loading-text-delay09 {
+	animation-delay: 900ms !important;
+	animation-duration: 6s !important;
+}
+
+
+@-webkit-keyframes loading-morph {
+  0% {
+    border-radius: 0 0 0 0;
+    background: #89BB55; /*#7cb342;*/
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    background: #C08F55; /*#b98342;*/
+    transform: rotate(45deg);
+  }
+  50% {
+    border-radius:50% 0 0 50%;
+    background: #C65481; /*#c04173;*/
+    transform: rotate(135deg);
+  }
+  75% {
+    border-radius: 50% 0 50% 50%;
+    background: #7D53CE; /*#6f40c8;*/
+    transform: rotate(225deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: #7893DB; /*#3f66cc;*/
+    transform: rotate(315deg);
+  }
+}
+
+@-webkit-keyframes loading-morph-inner {
+    0% { border-radius: 0 0 0 0; }
+    25% { border-radius: 50% 0 0 0; }
+    50% { border-radius: 50% 0 0 50%; }
+    75% { border-radius: 50% 0 50% 50%; }
+    100% { border-radius: 50%; }
+}
+
+
+@-webkit-keyframes text-hop {
+	0%, 65%, 75%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	70% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes text-hop {
+	0%, 65%, 75%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	70% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+
+.loading-vumc-placeholder {
+	position: relative;
+	height: 70px;
+    padding: 0;
+	background-color: #fff;
+    border: 1px dashed #d2d6de;
+}
+
+.loading-vumc-wrapper {
+	position: relative;
+	width:100%;
+	height:100%;
+}
+
+.loading-vumc-outer-shape {
+	position: relative;
+	margin: 0 auto;
+	width: 32px;
+	height: 32px;
+	background-color: #7893DB;
+	outline: 1px solid transparent;
+	/*animation: loading-morph 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;*/
+}
+
+.loading-vumc-inner-shape {
+    position: absolute;
+	/*left: 50%;
+	top: 50%;*/
+	/*margin: -8px 0 0 -8px;*/
+    width: 32px;
+    height: 32px;
+    background-color: green;
+    outline: 1px solid transparent;
+    /*animation: loading-morph-inner 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;*/
+
+	/*-webkit-animation: block-Block_V 2s, block_V-block 2s;
+	-webkit-animation-delay: 0s, 2s;*/
+	/*-webkit-animation: block-block_V 2s infinite;*/
+   /*animation: block-block_V 6s; /*, block_V-block 2s infinite alternate;*/*/
+
+	/*-webkit-transform-origin: 50%, 100%;*/
+	/*animation: block-Block_V 2s ease-out; cubic-bezier(1,.015,.295,1.225);*/
+}
+
+.block_mask {
+	position: relative;
+	bottom:0;
+	left:0;
+	width:32px;
+	height:32px;
+	/*-webkit-animation: block-block_V 5s, block_V-block 2s infinite;
+	-webkit-animation-delay: 0s, 8s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;*/
+}
+
+.block_mask rect {
+  fill: #000;
+}
+
+.block_V {
+	position: relative;
+	width:32px;
+	height:32px;
+	color: cornflowerblue;
+}
+
+.block_U {
+	position: relative;
+	width:32px;
+	height:32px;
+	color: darkcyan;
+}
+
+.block_M {
+	position: relative;
+	width:32px;
+	height:32px;
+	color: darkolivegreen;
+}
+
+.block_C {
+	position: relative;
+	width:32px;
+	height:32px;
+	color: indianred;
+}
+
+
+@-webkit-keyframes block-block_V {
+50% {
+	-webkit-transform: scale(0.1, 1);
+}
+100% {
+    -webkit-transform: scale(0.1, 0.5) translateY(12px);
+  }
+}
+
+@-webkit-keyframes block_V-block {
+100% {
+    -webkit-transform: scale(2, 2) translateY(-50px) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes vumc-morph {
+  0% {
+		/* solid square */
+    border-radius: 0 0 0 0;
+    background: #89BB55; /*#7cb342;*/
+    transform: rotate(0deg);
+  }
+  25% {
+		/* "V" shown */
+    border-radius: 50% 0 0 0;
+    background: #C08F55; /*#b98342;*/
+    transform: rotate(45deg);
+  }
+  50% {
+		/* "U" shown */
+    border-radius:50% 0 0 50%;
+    background: #C65481; /*#c04173;*/
+    transform: rotate(135deg);
+  }
+  75% {
+		/* "C" shown */
+    border-radius: 50% 0 50% 50%;
+    background: #7D53CE; /*#6f40c8;*/
+    transform: rotate(225deg);
+  }
+  100% {
+		/* "C" shown */
+    border-radius: 50%;
+    background: #7893DB; /*#3f66cc;*/
+    transform: rotate(315deg);
+  }
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+/* CHROME BROWSER STYLE LOADING ANIMATION */
+
+.circle-rotation {
+	position: relative;
+	width: 100px;
+	height: 100px;
+    margin: 0 auto;
+    /*-webkit-animation: spin00 10s infinite linear;*/
+}
+
+.circle00 {
+	position:absolute;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0);
+	border: 20px solid rgba(63, 102, 204, 1);
+    /*opacity: .9;*/
+    /*border-top: 5px solid rgba(0,0,0,0);*/
+    border-left: 20px solid rgba(0,0,0,0);
+    border-radius: 50%;
+    /*box-shadow: 0 0 10px #d2d6de;*/
+	-webkit-transform: rotate(45deg);
+    -webkit-animation: spin00 2s infinite linear;
+}
+
+.circle01 {
+	position:absolute;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0);
+    border: 20px solid rgba(255, 5, 5, 1);
+    /*opacity: .9;*/
+    border-top: 20px solid rgba(0,0,0,0);
+    border-right: 20px solid rgba(0,0,0,0);
+    border-radius: 50%;
+    /*box-shadow: 0 0 35px #2187e7;*/
+	-webkit-transform: rotate(45deg);
+    -webkit-animation: spin01 2s infinite cubic-bezier(1, .08, .17, .66); /*cubic-bezier(1,.015,.295,1.225);*/
+}
+
+
+@-webkit-keyframes spin00 {
+	100% {
+		-webkit-transform: rotate(405deg);
+	}
+}
+
+@-webkit-keyframes spin01 {
+	100% {
+		-webkit-transform: rotate(405deg);
+	}
+}
+
+
+/* LOADING ANIMATION: FOLDSPACE */
+
+@-webkit-keyframes fold01 {
+	0% {
+		border-color: #ffffff;
+		border-width: 0;
+	}
+	100% {
+		/*-webkit-transform: scale(0.5, 0.5);*/
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		-webkit-transform: translateY(5px);
+		opacity: .5;
+	}
+}
+
+
+.loading-placeholder {}
+.loading-foldspace {
+	border: 1px dashed #d2d6de;
+	/*border: 1px dashed #7893DB;*/
+	position: relative;
+	width:100%;
+	height:100%;
+	align-self: center;
+	vertical-align: central;
+	margin: auto;
+	-webkit-animation: fold01 .5s infinite ease;  /*cubic-bezier(1, .08, .17, .66);*/ /*cubic-bezier(1,.015,.295,1.225);*/
+	animation-direction: alternate;
+	background-color: #D3D3D3;
+	background-image: url('../images/diag304_fwd.gif');
+}
+.loading-foldspace-msg {
+	position: absolute;
+	top: 15px;
+	left: 0%;
+    width: 100%;
+	height:100%;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #898989;
+    margin: 0 0 -4px 0;
+}
