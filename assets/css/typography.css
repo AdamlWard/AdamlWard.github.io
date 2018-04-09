@@ -94,23 +94,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-variation-settings:
 		'wght' 300,
 		'wdth' 350,
+		'XOPQ' 200,
+		'YOPQ' 26,
 		'opsz' 24,
 		'grad' 88;
 	transition: all linear 0.2s;
 }
 
 h1 {
-  font-feature-settings: "liga" 1, "kern" 1;
-  font-size: 1rem;
-  font-variation-settings:
-    'wght' 300,
-    'wdth' 350,
-    'YTLC' 500,
-    'YTAS' 680,
-    'YTDE' 190,
-    'YTUC' 720,
-    'opsz' 24,
-    'grad' 88;
-  line-height: 1rem;
-  max-width: 38rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  /*max-width: 38rem;*/
+  }
+  
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   }
