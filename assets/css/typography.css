@@ -78,23 +78,24 @@ li {
 
 p {
 /* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
- -ms-word-break: break-all;
-     word-break: break-all;
-     /* Non standard for webkit */
-     word-break: break-word;
+	-ms-word-break: break-all;
+	 	word-break: break-all;
+	 	/* Non standard for webkit */
+	 	word-break: break-word;
 
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-    -ms-hyphens: auto;
-        hyphens: auto;
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+		-ms-hyphens: auto;
+			hyphens: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-variation-settings:
-    'wght' 300,
-    'wdth' 350,
-    'opsz' 24,
-    'grad' 88;
+	font-family: "Amstelvar VF", Georgia, "New Times Roman", serif;
+	font-variation-settings:
+		'wght' 300,
+		'wdth' 350,
+		'opsz' 24,
+		'grad' 88;
 	transition: all linear 0.2s;
 }
 
