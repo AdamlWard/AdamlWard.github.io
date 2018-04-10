@@ -22,20 +22,25 @@
 .logo.acronymicon {
 	grid-column: 1;
     align-self: end;
+	margin: 0 -0.4rem 0 0;
 }
 
 .logo.dot {
 	grid-column: 2;
-	margin: -0.5rem -10px;
+	margin:0 0 .1rem;
+	z-index: 2;
+    align-self: end;
 }
 
 .logo.net {
 	grid-column: 3;
     align-self: end;
+	margin: 0 0 0 -0.3rem;
 }
 
 .home_layout_search {
 	grid-area: main;
+	padding: 10px 0 0 0;
 }
 
 .home_layout_info {
