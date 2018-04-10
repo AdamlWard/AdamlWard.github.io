@@ -2,23 +2,40 @@
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 3rem 1fr 1fr 1fr;
   	grid-template-areas:
     ". . ."
-    ". logo ."
-    ". search ."
+    ". header ."
+    ". main ."
     ". info ."
 }
 
 .home_layout_logo {
-	grid-area: logo;
+	grid-area: header;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0,1fr));
-	grid-template-rows: 200px;
+	align-content: end;
+	justify-content: center;
+	grid-template-columns: min-content min-content min-content;
+	grid-template-rows: 1fr;
+}
+
+.logo.acronymicon {
+	grid-column: 1;
+    align-self: end;
+}
+
+.logo.dot {
+	grid-column: 2;
+	margin: -1.8rem -20px;
+}
+
+.logo.net {
+	grid-column: 3;
+    align-self: end;
 }
 
 .home_layout_search {
-	grid-area: search;
+	grid-area: main;
 }
 
 .home_layout_info {

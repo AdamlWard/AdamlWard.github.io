@@ -113,10 +113,17 @@ h2 {
 
 .logo.acronymicon {
 	font-size: 3rem;
+	font-variation-settings: 'wght' 400, 'wdth' 100, 'opsz' 14, 'XOPQ' 175.5, 'XTRA' 174.69, 'YOPQ' 19.55, 'YTLC' 563.75, 'YTSE' 19.66, 'GRAD' 89.91, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 750, 'YTRA' 1000, 'PWGT' 88, 'PWDT' 402;
+}
+
+.logo.dot {
+	font-size: 10rem;
+	line-height: 3rem;
 }
 
 .logo.net {
 	font-size: 2rem;
+	line-height: 3rem;
 }
 
 
