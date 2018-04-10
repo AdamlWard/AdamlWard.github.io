@@ -1,4 +1,5 @@
 ﻿.home_layout_wrapper {
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -11,6 +12,9 @@
 
 .home_layout_logo {
 	grid-area: logo;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0,1fr));
+	grid-template-rows: 200px;
 }
 
 .home_layout_search {
