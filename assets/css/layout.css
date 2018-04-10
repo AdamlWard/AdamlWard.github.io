@@ -1,1 +1,22 @@
-﻿
+﻿.home_layout_wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+  	grid-template-areas:
+    ". . ."
+    ". logo ."
+    ". search ."
+    ". info ."
+}
+
+.home_layout_logo {
+	grid-area: logo;
+}
+
+.home_layout_search {
+	grid-area: search;
+}
+
+.home_layout_info {
+	grid-area: info;
+}
